@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+  }
+  a{
+    text-decoration: none;
+  }
+  a img {
+    border: none;
+  }
+  
+  button,
+  a {
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button,
+  textarea,
+  select {
+    appearance: none !important;
+    border-radius: 0;
+  }
+
+   
+/* end of reset */
+
+#root{
+    background-color: #45ff32;
+}
+
+div.container.wrapper{  /*  there are two class in this html tag*/
+    background-color: #131537;
+}
+
+#root .conainer .conainer{ /* wondering on the path */
+    width: 200px;
+    height: 200px;
+} 
