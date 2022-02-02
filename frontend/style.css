@@ -6,30 +6,30 @@
     box-sizing: border-box;
     background: transparent;
     font-family: inherit;
-  }
-  a{
+}
+
+a{
     text-decoration: none;
-  }
-  a img {
+}
+a img {
     border: none;
-  }
-  
-  button,
-  a {
+}
+
+button,
+a {
     cursor: pointer;
     color: inherit;
-  }
-  
-  textarea {
-    resize: none;
-  }
-  
-  button,
-  textarea,
-  select {
+}
+
+textarea {
+resize: none;
+}
+    button,
+    textarea,
+    select {
     appearance: none !important;
     border-radius: 0;
-  }
+}
 
 /* end of reset */
 
@@ -55,6 +55,16 @@ section button{
     width: 200px;
     height: 30px;
     background-color: grey;
+}
+
+section.image-holder{
+    position: absolut;
+    top:0;
+    right:0;
+    height: 100vh;
+    overflow: hidden; /*ne csorduljon túl*/
+    object-fit: cover;
+
 }
 
 section.image-holder img{ /* image is not inline nor block by default */
