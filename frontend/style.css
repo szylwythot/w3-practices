@@ -33,8 +33,20 @@ resize: none;
 
 /* end of reset */
 
+body{
+    font-family: 'Lora', serif;
+}
+
+h1{
+    font-size: 100px;
+    margin: 40px 40px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    /* text-shadow: 2px 2px white; */
+}
+
 #root{
-    background-color: #45ff32;
+    /* background-color: #45ff32; */
 }
 
 div{
@@ -54,36 +66,59 @@ section button{
     bottom: 30px;
     width: 200px;
     height: 30px;
-    background-color: grey;
+    /* background-color: grey; */
 }
 
 section.image-holder{
     position: absolut;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
+    
     height: 100vh;
+
+    display: block;
+    
     overflow: hidden; /*ne csorduljon túl*/
     object-fit: cover;
-
 }
 
+section.image-holder button{
+    position: absolute;
+    bottom : 0;
+    left: 50%; /*szülő elem fele ez a bal felső sarkát rakja középre*/
+    transform: translateX(-50%); /*child elem fele ez a buttont visszatolja annyival hogy az elem közepe legyen középen, tehát saját magához képest számít ez az 50%*/
+    border-radius: 30px;
+    margin: 40px 0; /*ezzel visszük 40 pixellel el a szélétől*/
+
+    height: 60px; 
+    width: 200px;
+
+    background-color: #09CED9;
+ }
+
 section.image-holder img{ /* image is not inline nor block by default */
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+
     display: block;
     width: 100%;
     height: 100vh;
     /* object-fit: cover; cover:this cuts a normal scaled pic into the space it has */
-    object-fit: contain; /* ezzel csinálja a renderelhető képeket, ettől még position static marad, és csak image és videó tagekre vonatkozik, backgroundra nem*/
+    object-fit: cover; /* ezzel csinálja a renderelhető képeket, ettől még position static marad, és csak image és videó tagekre vonatkozik, backgroundra nem*/
 }
 
 section.background-holder{ /* szülője a backgroundnak*/
     padding: 20px;
-    border:10px solid rgba(15,80,95, 0.5);
-    background-clip: padding-box; /* ez mondja meg, hogy mi alat legyen: a content a padding vagy még a margó alatt is*/
-    background-image: url("canada.jpg");
-    background-size: 200px auto; /*cover ar cover, contain meg 1 vagy többször berakja, 200px az méretben rakja be, auto az az eredeti képarányt megtartja */
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: black;
+    /* border:10px solid rgba(15,80,95, 0.5); */
+
 }
 
-
+#about p{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 80px auto;
+    outline: none;
+}
