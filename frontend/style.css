@@ -31,20 +31,10 @@
     border-radius: 0;
   }
 
-   
 /* end of reset */
 
 #root{
     background-color: #45ff32;
-}
-
-div.container.wrapper{  /*  there are two class in this html tag*/
-    background-color: #131537;
-}
-
-#root .conainer .conainer{ /* wondering on the path */
-    width: 200px;
-    height: 200px;
 }
 
 div{
@@ -53,10 +43,8 @@ div{
 
 section{
     position: relative;
-
     width: 100%;
-    height: 100vh;
-
+    min-height: 100vh;
     border-bottom: 1px solid black;
 }
 
@@ -67,6 +55,25 @@ section button{
     width: 200px;
     height: 30px;
     background-color: grey;
+}
+
+section.image-holder img{ /* image is not inline nor block by default */
+    display: block;
+    width: 100%;
+    height: 100vh;
+    /* object-fit: cover; cover:this cuts a normal scaled pic into the space it has */
+    object-fit: contain; /* ezzel csinálja a renderelhető képeket, ettől még position static marad, és csak image és videó tagekre vonatkozik, backgroundra nem*/
+}
+
+section.background-holder{ /* szülője a backgroundnak*/
+    padding: 20px;
+    border:10px solid rgba(15,80,95, 0.5);
+    background-clip: padding-box; /* ez mondja meg, hogy mi alat legyen: a content a padding vagy még a margó alatt is*/
+    background-image: url("canada.jpg");
+    background-size: 200px auto; /*cover ar cover, contain meg 1 vagy többször berakja, 200px az méretben rakja be, auto az az eredeti képarányt megtartja */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: black;
 }
 
 
