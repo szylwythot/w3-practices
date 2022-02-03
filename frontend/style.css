@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Lora', serif;
     color: wheat;
@@ -15,6 +19,16 @@ h1{
 
 #root{
     /* background-color: #45ff32; */
+}
+
+header{ /*lehetne nav is*/
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    text-align: center;
+    background-color: #09CED9;
 }
 
 div{
