@@ -1,5 +1,7 @@
 body{
     font-family: 'Lora', serif;
+    color: wheat;
+    background-color: #44aada;
 }
 
 h1{
@@ -76,15 +78,41 @@ section.image-holder img{ /* image is not inline nor block by default */
 }
 
 section.background-holder{ /* szülője a backgroundnak*/
-    padding: 20px;
+    /* padding: 20px; */
     /* border:10px solid rgba(15,80,95, 0.5); */
 
 }
 
-#about p{
+#about{
+    min-height: unset;
+    background-color: #2295d8;
+}
+
+#about article{
     width: 100%;
     max-width: 400px;
     padding: 80px 20px;
     margin: 0 auto;
     outline: none;
+}
+
+#about h2{
+    padding-bottom: 20px;
+}
+
+#service ul{
+    width: 100%;
+    max-width: 400px;
+    padding: 80px 20px;
+    margin: 0 auto;
+    outline: none;
+    list-style: mono;
+}
+
+#services ul li{
+    padding-bottom: 10px;
+}
+
+#services ul li h2, #services ul li p{
+    text-align: center;
 }
