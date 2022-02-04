@@ -1,7 +1,6 @@
 html {
     scroll-behavior: smooth;
 }
-
 body{
     font-family: 'Lora', serif;
     color: wheat;
@@ -114,7 +113,15 @@ section.background-holder{ /* szülője a backgroundnak*/
     padding-bottom: 20px;
 }
 
-#service ul{
+#services{
+    /* background-image: url("https://scontent-vie1-1.xx.fbcdn.net/v/t1.6435-9/37052656_1727801373940311_7306188271887843328_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=e3f864&_nc_ohc=mCYuYVx6P4YAX8alOO-&_nc_ht=scontent-vie1-1.xx&oh=00_AT_Jza3y0Tzy6_s9p_fkadSXh7khvnHg82sown-1dnrQYg&oe=6221F038"); */
+    background-image: url("kovek.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: #2295d8;
+}
+
+#services ul{
     width: 100%;
     max-width: 400px;
     padding: 80px 20px;
