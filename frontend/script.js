@@ -9,7 +9,9 @@ function loadEvent(eventObject){
 
     let anchors = "";
     for (const sectionElement of listOfSectionElements) {
-        anchors += `<a href="#${ sectionElement.id }"> ${ sectionElement.id } </a>`;
+        if(sectionElement.getAttribute("data-show")){
+            anchors += `<a href="#${ sectionElement.id }"> ${ sectionElement.getAttribute("data-title") } </a>`;
+        }
     }
     console.log(anchors);
     rootElement.insertAdjacentHTML("afterbegin", `<header>${anchors}</header>`); // afterbegin a legelső elemek elé kerül

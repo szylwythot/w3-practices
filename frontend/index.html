@@ -17,7 +17,7 @@
 
 <body>
     <div id="root">
-        <section class="image-holder" id="welcome"> <!-- sections should have an id, but just the main sections! not too many section -->
+        <section class="image-holder" id="welcome" data-title="Welcome on page" data-show="1"> <!-- sections should have an id, but just the main sections! not too many section -->
             <img
             class="img"
             src="szilvi_background.jpg"
@@ -25,7 +25,7 @@
             <h1>Wellcome to our website!</h1>
             <button>Button</button>
         </section>
-        <section class="paragraph-section background-holder" id= "about">
+        <section class="paragraph-section background-holder" id="about" data-title="About our company"  data-show="1">
             <article>
                 <h2>About us</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, repellat voluptatum! Numquam, mollitia id doloremque incidunt quasi reprehenderit laborum tempora minima, temporibus porro enim velit aliquam voluptas quam, omnis exercitationem?
@@ -35,7 +35,7 @@
                 Dignissimos voluptates, amet, nobis illum explicabo est in nulla temporibus nihil omnis aspernatur! Soluta eligendi distinctio temporibus harum voluptatem, voluptatibus unde dolores. Unde fuga temporibus quos at enim repellendus laudantium.</p>
             </article>
         </section>
-        <section id="services" class="empty-section">
+        <section id="services" class="empty-section" data-title="Our services" data-show="1">
             <ul>
                 <li>
                     <h2>Service1</h2>
@@ -64,7 +64,7 @@
                 </li>
             </ul>
         </section>
-        <section id= "contact" class="form-section">
+        <section id= "contact" class="form-section" data-title="Get in touch" data-show="1">
             <form action="">
                 <label for="fname">First name:</label><br>
                 <input type="text" id="fname" name="fname" value="John"><br>
@@ -73,7 +73,7 @@
                 <input type="submit" value="Submit">
             </form> 
         </section>
-        <section id="terms"></section>
+        <section id="terms" data-title="Terms & Condition" ></section>
     </div>
 </body>
 
